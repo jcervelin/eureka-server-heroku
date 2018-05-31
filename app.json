@@ -1,0 +1,12 @@
+{
+  "name": "Eureka Server",
+  "description": "Eureka Server heroku project.",
+  "website": "https://github.com/jcervelin/eureka-server-heroku",
+  "success_url": "/",
+  "env": {
+      "EUREKA_USER_PASSWORD": {
+          "description": "Password for the admin interface.",
+          "generator": "secret"
+      }
+  }
+}
