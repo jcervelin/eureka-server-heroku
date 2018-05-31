@@ -1,9 +1,5 @@
 server:
   port: ${PORT:5000}
-security:
-  user:
-    password: ${eureka.password}
-
 eureka:
   instance:
     hostname: localhost
@@ -13,3 +9,7 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   password: ${EUREKA_USER_PASSWORD:password}
+spring:
+  security:
+    user:
+      password: ${eureka.password}
